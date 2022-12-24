@@ -1,0 +1,26 @@
+.search {
+    margin: 0 auto;
+    background: $default-color-white;
+    width: 647px;
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-item {
+            border: none;
+            color: $color-grey;
+            font-family: $primary-font-text;
+            font-weight: 400;
+            font-size: $font-size-btn;
+            line-height: 20px;
+            letter-spacing: 0.2em;
+            margin-left: 36px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

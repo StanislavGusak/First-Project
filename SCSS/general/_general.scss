@@ -1,0 +1,21 @@
+@import "./reset";
+@import "./fonts";
+@import "./variables";
+@import "./typography";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: $default-color-white;
+    font-family: $primary-font-text;
+    font-size: $default-font-size;
+    min-width: $mobile;
+    margin: 0 auto;
+}
+
+.wrapper {
+    max-width: $max-content-width;
+    margin: 0 auto;
+}

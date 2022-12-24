@@ -1,0 +1,29 @@
+.header {
+    background-image: url(../../images/img/HeaderBackground.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: inherit;
+    background-size: cover;
+    margin: 0 auto;
+    max-width: 1360px;
+    height: 55vw;
+    position: relative;
+
+    &__block {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 31%;
+        left: 50%;
+        transform: translate(-50%);
+        position: relative;
+    }
+
+    &__btn {
+        position: absolute;
+        left: 50%;
+        bottom: 15%;
+        transform: translate(-50%);
+    }
+}

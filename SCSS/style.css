@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@300;400;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header__block-title {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  text-transform: uppercase;
+}
+
+.header__block-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.31em;
+  margin: 8px auto 48px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #FFFFFF;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  min-width: 576px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url(../../images/img/HeaderBackground.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: inherit;
+  background-size: cover;
+  margin: 0 auto;
+  max-width: 1360px;
+  height: 55vw;
+  position: relative;
+}
+.header__block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 31%;
+  left: 50%;
+  transform: translate(-50%);
+  position: relative;
+}
+.header__btn {
+  position: absolute;
+  left: 50%;
+  bottom: 15%;
+  transform: translate(-50%);
+}
+
+.search {
+  margin: 0 auto;
+  background: #FFFFFF;
+  width: 647px;
+}
+.search__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search__form-item {
+  border: none;
+  color: #999999;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  margin-left: 36px;
+}
+.search__form-item:focus {
+  outline: none;
+}
+
+.navigation {
+  background: #5373FD;
+  padding: 32px 0;
+}
+.navigation .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__list-item:not(:first-child) {
+  margin-left: 40px;
+}
+
+.search__form-btn {
+  display: flex;
+  align-items: center;
+  background: #5373FD;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  margin: 4px 5px;
+  padding: 16px 24px;
+  text-transform: uppercase;
+}
+.search__form-btn:hover {
+  opacity: 0.8;
+  transition: all 300ms ease-in-out;
+}
+.search__form-btn .icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+  color: #FFFFFF;
+}
+
+.scroll-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  background: transparent;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.scroll-btn:hover {
+  opacity: 0.7;
+  transition: all 300ms ease-in-out;
+}
+.scroll-btn .icon {
+  width: 14px;
+  height: 16px;
+  margin-top: 4px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.nav-link {
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.nav-link:hover {
+  color: #333333;
+  transition: all 200ms ease-in-out;
+}/*# sourceMappingURL=style.css.map */

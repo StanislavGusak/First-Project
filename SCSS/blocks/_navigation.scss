@@ -1,0 +1,27 @@
+.navigation {
+    background: $color-blue;
+    padding: 32px 0;
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.menu {
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-item {
+
+            &:not(:first-child) {
+                margin-left: 40px;
+            }
+        }
+    }
+}
+

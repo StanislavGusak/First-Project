@@ -1,0 +1,15 @@
+.header__block-title {
+    font-family: $primary-font-text;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 52px;
+    text-transform: uppercase;
+}
+
+.header__block-text {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.31em;
+    margin: 8px auto 48px;
+}
