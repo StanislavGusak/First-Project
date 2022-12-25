@@ -65,6 +65,14 @@ table {
   margin: 8px auto 48px;
 }
 
+.subtitle {
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: capitalize;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -78,18 +86,31 @@ body {
 }
 
 .wrapper {
-  max-width: 1140px;
+  max-width: 1320px;
   margin: 0 auto;
+}
+@media screen and (max-width: 1360px) {
+  .wrapper {
+    padding: 0 110px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    padding: 0 32px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 0 24px;
+  }
 }
 
 .header {
   background-image: url(../../images/img/HeaderBackground.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: inherit;
   background-size: cover;
   margin: 0 auto;
-  max-width: 1360px;
   height: 55vw;
   position: relative;
 }
@@ -143,6 +164,12 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 900px) {
+  .navigation .nav-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
 
 .menu__list {
   display: flex;
@@ -153,9 +180,88 @@ body {
   margin-left: 40px;
 }
 
-.search__form-btn {
+.section-why {
   display: flex;
+  justify-content: center;
   align-items: center;
+  background-image: url(../../images/img/WhyBackground.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 55vw;
+}
+@media screen and (max-width: 900px) {
+  .section-why {
+    height: auto;
+  }
+}
+.section-why__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 900px) {
+  .section-why__container {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 32px;
+    padding: 60px 0;
+  }
+}
+.section-why__container .inner {
+  max-width: 48%;
+}
+@media screen and (max-width: 1024px) {
+  .section-why__container .inner {
+    max-width: 57%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section-why__container .inner {
+    max-width: 720px;
+  }
+}
+.section-why__container .inner__text {
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  margin: 24px 0 32px;
+}
+.section-why__container .block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 461px;
+  max-width: 42%;
+}
+@media screen and (max-width: 1024px) {
+  .section-why__container .block {
+    width: 386px;
+    max-width: 41%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section-why__container .block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 720px;
+    gap: 24px;
+  }
+}
+.section-why__container .block .img {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+}
+.section-why__container .block .img-first {
+  margin-right: auto;
+}
+.section-why__container .block .img-second {
+  margin-left: auto;
+}
+
+.btn {
   background: #5373FD;
   border: none;
   color: #FFFFFF;
@@ -164,44 +270,50 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0.1em;
-  margin: 4px 5px;
   padding: 16px 24px;
   text-transform: uppercase;
 }
-.search__form-btn:hover {
+.btn:hover {
   opacity: 0.8;
   transition: all 300ms ease-in-out;
 }
-.search__form-btn .icon {
+.btn-search {
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+  margin: 4px 5px;
+}
+.btn-search .icon {
   width: 16px;
   height: 16px;
   margin-right: 12px;
   color: #FFFFFF;
 }
-
-.scroll-btn {
+.btn-scroll {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: none;
   background: transparent;
+  border: none;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
-  font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.2em;
   color: #FFFFFF;
   cursor: pointer;
 }
-.scroll-btn:hover {
+.btn-scroll:hover {
   opacity: 0.7;
   transition: all 300ms ease-in-out;
 }
-.scroll-btn .icon {
+.btn-scroll .icon {
   width: 14px;
   height: 16px;
   margin-top: 4px;
+}
+.btn__inner {
+  font-size: 16px;
+  letter-spacing: 0.07em;
 }
 
 a {

@@ -13,3 +13,11 @@
     letter-spacing: 0.31em;
     margin: 8px auto 48px;
 }
+
+.subtitle {
+    font-family: $primary-font-title;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    text-transform: capitalize;
+}

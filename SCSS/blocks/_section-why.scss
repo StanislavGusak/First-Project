@@ -1,0 +1,82 @@
+.section-why {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../images/img/WhyBackground.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 55vw;
+
+    @media screen and (max-width:$tablet-half) {
+        height: auto;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width:$tablet-half) {
+            flex-direction: column-reverse;
+            text-align: center;
+            gap: 32px;
+            padding: 60px 0;
+        }
+
+        .inner {
+            max-width: 48%;
+
+            @media screen and (max-width:$desktop-small) {
+                max-width: 57%;
+            }
+
+            @media screen and (max-width:$tablet-half) {
+                max-width: 720px;
+
+            }
+
+            &__text {
+                font-weight: 300;
+                line-height: 28px;
+                letter-spacing: 0.1em;
+                margin: 24px 0 32px;
+            }
+        }
+
+        .block {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            width: 461px;
+            max-width: 42%;
+
+            @media screen and (max-width:$desktop-small) {
+                width: 386px;
+                max-width: 41%;
+            }
+
+            @media screen and (max-width:$tablet-half) {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                max-width: 720px;
+                gap: 24px;
+            }
+
+            .img {
+                display: block;
+                width: 100%;
+                max-width: 350px;
+            }
+
+            .img-first {
+                margin-right: auto;
+            }
+
+            .img-second {
+                margin-left: auto;
+            }
+        }
+    }
+}

@@ -18,4 +18,16 @@ body {
 .wrapper {
     max-width: $max-content-width;
     margin: 0 auto;
+
+    @media screen and (max-width:$desktop) {
+        padding: 0 110px;
+    }
+
+    @media screen and (max-width:$desktop-small) {
+        padding: 0 32px;
+    }
+
+    @media screen and (max-width:$tablet) {
+        padding: 0 24px;
+    }
 }
