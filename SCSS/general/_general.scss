@@ -30,4 +30,8 @@ body {
     @media screen and (max-width:$tablet) {
         padding: 0 24px;
     }
+
+    @media screen and (max-width:$mobile) {
+        padding: 0 18px;
+    }
 }

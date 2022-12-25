@@ -1,12 +1,19 @@
 .search {
+    display: flex;
     margin: 0 auto;
     background: $default-color-white;
     width: 647px;
+
+    @media screen and (max-width:$mobile-end) {
+        width: 94%;
+    }
 
     &__form {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 4px 5px;
+        width: 100%;
 
         &-item {
             border: none;
@@ -21,6 +28,11 @@
             &:focus {
                 outline: none;
             }
+        }
+
+        &-search {
+            margin-left: auto;
+
         }
     }
 }
