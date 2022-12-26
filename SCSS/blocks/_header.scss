@@ -11,11 +11,12 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        padding: 0 18px;
+        width: 100%;
         position: absolute;
         top: 31%;
         left: 50%;
         transform: translate(-50%);
-        position: relative;
     }
 
     &__btn {

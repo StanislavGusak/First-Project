@@ -1,20 +1,32 @@
 .navigation {
     background: $color-blue;
     padding: 32px 0;
+    position: relative;
+
 
     .nav-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
 
         @media screen and (max-width:$tablet-half) {
-           flex-direction: column;
-           gap: 30px;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        @media screen and (max-width:$mobile-end) {
+            flex-direction: row;
+            align-items: center;
         }
     }
 }
 
 .menu {
+
+    @media screen and (max-width:$mobile-end) {
+        display: none;
+    }
 
     &__list {
         display: flex;
