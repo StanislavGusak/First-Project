@@ -11,7 +11,7 @@ body {
     color: $default-color-white;
     font-family: $primary-font-text;
     font-size: $default-font-size;
-    min-width: $mobile;
+    min-width: 375px;
     margin: 0 auto;
 }
 
