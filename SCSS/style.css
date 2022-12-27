@@ -78,10 +78,12 @@ table {
 }
 
 body {
+  background: #333333;
   color: #FFFFFF;
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
   min-width: 375px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -152,7 +154,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4px 5px;
+  padding: 4px 5px 4px 36px;
   width: 100%;
 }
 .search__form-item {
@@ -163,7 +165,11 @@ body {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.2em;
-  margin-left: 36px;
+}
+@media screen and (max-width: 576px) {
+  .search__form-item {
+    overflow: hidden;
+  }
 }
 .search__form-item:focus {
   outline: none;
@@ -389,6 +395,91 @@ body {
 }
 .section-why__container .block .img-second {
   margin-left: auto;
+}
+
+.steps {
+  background: #333333;
+  position: relative;
+  padding: 81px 0 44px;
+}
+.steps__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+.steps__block {
+  text-align: center;
+  width: 30%;
+}
+
+.block__icon {
+  display: inline-block;
+  border-radius: 50%;
+}
+.block__icon .icon {
+  width: 64px;
+  height: 64px;
+  background-color: transparent;
+  margin-bottom: 20px;
+}
+.block__icon .search {
+  color: #5373FD;
+}
+.block__icon .select {
+  color: #FF6363;
+  position: relative;
+  z-index: 3;
+}
+.block__icon .enjoy {
+  color: #00A2FF;
+}
+
+.contain {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  width: 66%;
+}
+@media screen and (max-width: 768px) {
+  .contain {
+    display: none;
+  }
+}
+.contain__circle {
+  width: 47%;
+  height: 69px;
+  overflow: hidden;
+  position: relative;
+}
+@media screen and (max-width: 1024px) {
+  .contain__circle {
+    height: 57px;
+  }
+}
+.contain__circle-line {
+  width: 57vw;
+  height: 78vh;
+  border: 1px dashed white;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-24%);
+}
+@media screen and (max-width: 1360px) {
+  .contain__circle-line {
+    width: 42vw;
+    height: 78vh;
+    transform: translate(-20%);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .contain__circle-line {
+    width: 51vw;
+    height: 83vh;
+    transform: translate(-22%);
+  }
 }
 
 .btn {

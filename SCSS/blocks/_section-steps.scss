@@ -1,0 +1,119 @@
+.steps {
+    background: $color-grafit;
+    position: relative;
+    padding: 81px 0 44px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+    }
+
+    &__block {
+        text-align: center;
+        width: 30%;
+    }
+}
+
+
+.block__icon {
+    display: inline-block;
+    border-radius: 50%;
+
+    .icon {
+        width: 64px;
+        height: 64px;
+        background-color: transparent;
+        margin-bottom: 20px;
+    }
+
+    .search {
+        color: $color-blue;
+    }
+
+    .select {
+        color: $color-red;
+        position: relative;
+        z-index: 3
+    }
+
+    .enjoy {
+        color: $color-blue-light;
+    }
+}
+
+.contain {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width: 66%;
+
+    @media screen and (max-width:$tablet) {
+        display: none;
+      }
+
+    &__circle {
+        width: 47%;
+        height: 69px;
+        overflow: hidden;
+        position: relative;
+    
+        @media screen and (max-width:$desktop-small) {
+            height: 57px;
+        }
+    
+        &-line {
+            width: 57vw;
+            height: 78vh;
+            border: 1px dashed white;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(-24%);
+        
+            @media screen and (max-width:$desktop) {
+                width: 42vw;
+                height: 78vh;
+                transform: translate(-20%);
+            }
+        
+            @media screen and (max-width:$desktop-small) {
+                width: 51vw;
+                height: 83vh;
+                transform: translate(-22%);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+// .line2 {
+//     width: 57vw;
+//     height: 78vh;
+//     border: 1px dashed white;
+//     border-radius: 50%;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     transform: translate(-24%);
+
+//     @media screen and (max-width:$desktop) {
+//         width: 42vw;
+//         height: 78vh;
+//         transform: translate(-20%);
+//     }
+
+//     @media screen and (max-width:$desktop-small) {
+//         width: 51vw;
+//         height: 83vh;
+//         transform: translate(-22%);
+//     }
+// }
