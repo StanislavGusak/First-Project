@@ -7,6 +7,18 @@
     height: 100vh;
     position: relative;
 
+    // @media screen and (max-width: $desktop) {
+    //     background-position: 43%;
+    //     }
+
+    //     @media screen and (max-width: $desktop-small) {
+    //         background-position: 71%;
+    //         }
+
+    //         @media screen and (max-width: $tablet) {
+    //             background-position: 59%;
+    //             }
+
     &__block {
         display: flex;
         align-items: center;

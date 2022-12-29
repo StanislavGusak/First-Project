@@ -1,0 +1,67 @@
+.what-say {
+    background-image: url(../../images/img/BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 120px 0 180px;
+
+    &__container {
+        margin: 0 auto;
+
+        .subtitle {
+            text-align: center;
+        }
+    }
+}
+
+.review {
+    width: 100%;
+    display: flex;
+    margin-top: 60px;
+
+    &__picture {
+        width: 33%;
+
+        &-img {
+            width: 100%;
+            min-height: 308px;
+            object-fit: cover;
+        }
+    }
+
+    &__inner {
+        background: $color-grafit;
+        max-width: 67%;
+        padding: 48px 60px;
+
+        &-title {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__block {
+        position: relative;
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            color: $color-blue;
+            float: left;
+            position: absolute;
+            top: -5px;
+        }
+
+        &-text {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 0.1em;
+            margin-top: 16px;
+            text-indent: 30px;
+        }
+    }
+}

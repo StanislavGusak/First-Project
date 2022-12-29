@@ -6,10 +6,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 55vw;
+    height: auto;
+    padding: 124px 0;
 
     @media screen and (max-width:$tablet-half) {
-        height: auto;
+        padding: 60px 0;
     }
 
     &__container {
@@ -21,7 +22,6 @@
             flex-direction: column-reverse;
             text-align: center;
             gap: 32px;
-            padding: 60px 0;
         }
 
         .inner {
