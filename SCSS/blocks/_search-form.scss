@@ -25,11 +25,13 @@
             letter-spacing: 0.2em;
 
             @media screen and (max-width:$mobile) {
-                text-overflow: clip;
+                width: 100%;
             }
 
             &:focus {
-                outline: none;
+                outline: auto;
+                color: $color-grey;
+                background: $default-color-white;
             }
         }
 

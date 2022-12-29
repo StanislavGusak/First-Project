@@ -2,6 +2,16 @@
     padding: 80px 0;
     text-align: center;
 
+    &-logo {
+        font-family: $primary-font-text;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $default-color-white;
+    }
+
     &-inner {
         font-family: 'Josefin Sans';
         font-weight: 400;
@@ -22,10 +32,12 @@
             }
 
             &-link {
+                display: block;
                 color: $default-color-white;
 
                 &:hover {
                     color: $color-blue;
+                    transition: all 200ms ease-in-out;
                 }
 
                 .icon {

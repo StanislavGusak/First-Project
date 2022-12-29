@@ -176,11 +176,13 @@ body {
 }
 @media screen and (max-width: 576px) {
   .search__form-item {
-    text-overflow: clip;
+    width: 100%;
   }
 }
 .search__form-item:focus {
-  outline: none;
+  outline: auto;
+  color: #999999;
+  background: #FFFFFF;
 }
 .search__form-search {
   margin-left: auto;
@@ -245,6 +247,7 @@ body {
 .mobile #check-menu:checked ~ .mobile__menu {
   max-height: 300px;
   font-size: 16px;
+  background: #5373FD;
 }
 .mobile #check-menu:checked ~ .first {
   display: none;
@@ -568,6 +571,11 @@ body {
   margin-top: 24px;
   letter-spacing: 0.07em;
 }
+.first-now .description__btn:hover {
+  background: #FFFFFF;
+  color: #333333;
+  transition: all 300ms ease-in-out;
+}
 
 .second-now {
   background-image: url(../../images/img/spain.png);
@@ -631,6 +639,11 @@ body {
   padding: 20px 56px;
   margin-top: 24px;
   letter-spacing: 0.07em;
+}
+.second-now__inner .description__btn:hover {
+  background: #FFFFFF;
+  color: #333333;
+  transition: all 300ms ease-in-out;
 }
 
 .what-say {
@@ -720,6 +733,15 @@ body {
   padding: 80px 0;
   text-align: center;
 }
+.footer__block-logo {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
 .footer__block-inner {
   font-family: "Josefin Sans";
   font-weight: 400;
@@ -737,10 +759,12 @@ body {
   margin-left: 32px;
 }
 .footer__block .social__list-link {
+  display: block;
   color: #FFFFFF;
 }
 .footer__block .social__list-link:hover {
   color: #5373FD;
+  transition: all 200ms ease-in-out;
 }
 .footer__block .social__list-link .icon {
   width: 32px;
@@ -759,14 +783,18 @@ body {
   padding: 16px 24px;
   text-transform: uppercase;
 }
-.btn:hover {
-  opacity: 0.8;
-  transition: all 300ms ease-in-out;
-}
 .btn-search {
   display: flex;
   align-items: center;
   letter-spacing: 0.1em;
+}
+.btn-search:hover {
+  background: #333333;
+  transition: all 300ms ease-in-out;
+}
+.btn-search:hover .icon {
+  transform: scale(2, 2);
+  transition: all 500ms ease-in-out;
 }
 .btn-search .icon {
   width: 16px;
@@ -788,8 +816,9 @@ body {
   cursor: pointer;
 }
 .btn-scroll:hover {
+  transform: translate(-50%) scale(2, 2);
   opacity: 0.7;
-  transition: all 300ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 .btn-scroll .icon {
   width: 14px;
@@ -799,6 +828,11 @@ body {
 .btn__inner {
   font-size: 16px;
   letter-spacing: 0.07em;
+}
+.btn__inner:hover {
+  background: #FFFFFF;
+  color: #333333;
+  transition: all 500ms ease-in-out;
 }
 
 a {
@@ -828,8 +862,23 @@ a {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #FFFFFF;
+  position: relative;
+}
+.nav-link::after {
+  display: block;
+  content: "";
+  width: 70%;
+  height: 1px;
+  position: absolute;
+  left: 50%;
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%) scale3d(0, 1, 1);
+  bottom: -10px;
+  background: #333333;
 }
 .nav-link:hover {
   color: #333333;
-  transition: all 200ms ease-in;
+}
+.nav-link:hover::after {
+  transform: translate(-50%) scale3d(1, 1, 1);
 }/*# sourceMappingURL=style.css.map */
