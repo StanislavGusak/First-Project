@@ -13,12 +13,16 @@ body {
     font-family: $primary-font-text;
     font-size: $default-font-size;
     min-width: 375px;
-    max-width: 1920px;
+    max-width: $desktop-big;
     margin: 0 auto;
 }
 
 .wrapper {
     margin: 0 auto;
+
+    @media screen and (max-width:$desktop-big) {
+        max-width: $max-content-width;
+    }
 
     @media screen and (max-width:$desktop) {
         padding: 0 110px;
