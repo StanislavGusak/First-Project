@@ -10,6 +10,7 @@ a {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: $default-color-white;
+    height: 20px;
 
     @media screen and (max-width:$mobile-end) {
        display: none;

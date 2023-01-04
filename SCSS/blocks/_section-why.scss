@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../../images/img/WhyBackground.png);
+    background-image: url(../images/image/WhyBackground.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -25,7 +25,11 @@
         }
 
         .inner {
-            max-width: 48%;
+            max-width: 50%;
+
+            @media screen and (max-width:$desktop) {
+                max-width: 49%;
+            }
 
             @media screen and (max-width:$desktop-small) {
                 max-width: 57%;
@@ -48,8 +52,15 @@
             display: flex;
             flex-direction: column;
             gap: 16px;
-            width: 461px;
-            max-width: 42%;
+            width: 424px;
+            max-width: 33%;
+            margin-right: 112px;
+
+            @media screen and (max-width:$desktop) {
+                width: 461px;
+                max-width: 41%;
+                margin: 0;
+            }
 
             @media screen and (max-width:$desktop-small) {
                 width: 386px;

@@ -1,7 +1,11 @@
 .steps {
     background: $color-grafit;
     position: relative;
-    padding: 81px 0 44px;
+    padding: 60px 0;
+
+    @media screen and (max-width:$desktop) {
+        padding: 80px 0 45px;
+    }
 
     @media screen and (max-width:$tablet) {
         padding: 60px 0;
@@ -9,7 +13,7 @@
 
     &__container {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: flex-end;
         width: 100%;
 
@@ -22,9 +26,10 @@
 
     &__block {
         text-align: center;
-        width: 30%;
+        width: 33%;
 
         &:nth-child(2) {
+            margin: 0 25px;
 
             @media screen and (max-width:$tablet) {
                 margin: 60px auto;
@@ -32,7 +37,7 @@
         }
 
         @media screen and (max-width:$tablet) {
-           width: 100%;
+            width: 100%;
         }
     }
 }
@@ -40,7 +45,7 @@
 .block__icon {
     display: inline-block;
     border-radius: 50%;
-    padding: 16px;
+    // padding: 16px;
 
     .icon {
         width: 64px;
@@ -68,42 +73,35 @@
     display: flex;
     margin: auto;
     justify-content: space-between;
-    width: 66%;
+    width: 62%;
 
     @media screen and (max-width:$tablet) {
         display: none;
-      }
+    }
 
     &__circle {
         width: 47%;
         height: 69px;
         overflow: hidden;
         position: relative;
-    
-        @media screen and (max-width:$desktop-small) {
-            height: 57px;
+        border: 1px solid white;
+
+        @media screen and (max-width:$desktop) {
+            height: 53px;
         }
-    
+
         &-line {
-            width: 41vw;
-            height: 78vh;
+            width: 37vw;
+            height: 47vw;
+            transform: translate(-50%);
             border: 1px dashed $default-color-white;
             border-radius: 50%;
             position: absolute;
             top: 0;
-            left: 0;
-            transform: translate(-24%);
-        
+            left: 50%;
+
             @media screen and (max-width:$desktop) {
-                width: 42vw;
-                height: 78vh;
-                transform: translate(-20%);
-            }
-        
-            @media screen and (max-width:$desktop-small) {
-                width: 51vw;
-                height: 83vh;
-                transform: translate(-22%);
+                width: 45vw;
             }
         }
     }

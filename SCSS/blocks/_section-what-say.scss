@@ -1,5 +1,5 @@
 .what-say {
-    background-image: url(../../images/img/BG.png);
+    background-image: url(../images/image/BG.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -47,11 +47,11 @@
 
     &__inner {
         background: $color-grafit;
-        max-width: 67%;
+        width: 67%;
         padding: 48px 60px;
 
         @media screen and (max-width:$tablet) {
-        max-width: 100%;
+        width: 100%;
         }
 
         &-title {

@@ -1,5 +1,5 @@
 .first-now {
-    background-image: url(../../images/img/render.png);
+    background-image: url(../images/image/render.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -15,7 +15,7 @@
     .description {
         background: $color-background;
         padding: 44px 32px;
-        max-width: 48%;
+        max-width: 49%;
 
         @media screen and (max-width: $desktop-small) {
             max-width: 58%;

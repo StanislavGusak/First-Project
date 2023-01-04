@@ -1,5 +1,5 @@
 .header {
-    background-image: url(../../images/img/HeaderBackground.png);
+    background-image: url(../images/image/HeaderBackground.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -11,18 +11,29 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        padding: 0 18px;
         width: 100%;
         position: absolute;
-        top: 31%;
+        top: 36%;
         left: 50%;
         transform: translate(-50%);
+
+        @media screen and (max-width:$desktop) {
+        top: 34%;
+        }
+         
+        @media screen and (max-width:$tablet) {
+            padding: 0 18px;
+        }
     }
 
     &__btn {
         position: absolute;
         left: 50%;
-        bottom: 15%;
+        bottom: 13%;
         transform: translate(-50%);
+
+        @media screen and (max-width:$desktop) {
+            bottom: 14%;
+        }
     }
 }

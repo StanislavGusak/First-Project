@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+use {
+    width: 20px;
+    height: 20px;
+}
+
 body {
     background: $color-grafit;
     color: $default-color-white;
@@ -19,12 +24,19 @@ body {
 
 .wrapper {
     margin: 0 auto;
+    // max-width: desktop;
+    // padding: 0 110px;
+    max-width: $max-content-width;
+    padding: 0;
 
-    @media screen and (max-width:$desktop-big) {
-        max-width: $max-content-width;
-    }
+
+    // @media screen and (max-width:$desktop-big) {
+    //     max-width: $max-content-width;
+    //     padding: 0;
+    // }
 
     @media screen and (max-width:$desktop) {
+        max-width: $desktop;
         padding: 0 110px;
     }
 
