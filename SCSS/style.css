@@ -77,11 +77,6 @@ table {
   box-sizing: border-box;
 }
 
-use {
-  width: 20px;
-  height: 20px;
-}
-
 body {
   background: #333333;
   color: #FFFFFF;
@@ -517,7 +512,6 @@ body {
   height: 69px;
   overflow: hidden;
   position: relative;
-  border: 1px solid white;
 }
 @media screen and (max-width: 1360px) {
   .contain__circle {
