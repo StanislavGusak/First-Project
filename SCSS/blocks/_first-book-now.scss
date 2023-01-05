@@ -9,7 +9,7 @@
     max-width: 49%;
 
     @media screen and (max-width: $desktop-small) {
-        max-width: 57%;
+        max-width: 57.3%;
     }
 
     @media screen and (max-width: $tablet) {
@@ -29,22 +29,5 @@
         line-height: 28px;
         text-transform: uppercase;
         margin: 16px 0;
-    }
-
-    &__btn {
-        font-size: $default-font-size;
-        padding: 20px 56px;
-        margin-top: 24px;
-        letter-spacing: 0.07em;
-
-        @media screen and (max-width: $tablet) {
-            margin-top: 28px;
-        }
-
-        &:hover {
-            background: $default-color-white;
-            color: $color-grafit;
-            transition: all 300ms ease-in-out;
-        }
     }
 }
