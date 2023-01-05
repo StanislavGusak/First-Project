@@ -1,60 +1,50 @@
 .first-now {
     background-image: url(../images/image/render.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: auto;
     display: flex;
-    padding: 220px 0 120px;
+}
 
-    @media screen and (max-width: $tablet) {
-        padding: 120px 0;
+.description {
+    background: $color-background;
+    padding: 44px 32px;
+    max-width: 49%;
+
+    @media screen and (max-width: $desktop-small) {
+        max-width: 57%;
     }
 
-    .description {
-        background: $color-background;
-        padding: 44px 32px;
-        max-width: 49%;
+    @media screen and (max-width: $tablet) {
+        max-width: 100%;
+    }
 
-        @media screen and (max-width: $desktop-small) {
-            max-width: 57%;
-        }
+    &__country {
+        font-weight: 300;
+        font-size: $default_font-subtitle;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: $default_font-subtitle;
+        line-height: 28px;
+        text-transform: uppercase;
+        margin: 16px 0;
+    }
+
+    &__btn {
+        font-size: $default-font-size;
+        padding: 20px 56px;
+        margin-top: 24px;
+        letter-spacing: 0.07em;
 
         @media screen and (max-width: $tablet) {
-            max-width: 100%;
+            margin-top: 28px;
         }
 
-        &__country {
-            font-weight: 300;
-            font-size: $default_font-subtitle;
-            line-height: 28px;
-            letter-spacing: 0.1em;
-        }
-
-        &__title {
-            font-weight: 400;
-            font-size: $default_font-subtitle;
-            line-height: 28px;
-            text-transform: uppercase;
-            margin: 16px 0;
-        }
-
-        &__btn {
-            font-size: $default-font-size;
-            padding: 20px 56px;
-            margin-top: 24px;
-            letter-spacing: 0.07em;
-
-            @media screen and (max-width: $tablet) {
-                margin-top: 28px;
-            }
-
-            &:hover {
-                background: $default-color-white;
-                color: $color-grafit;
-                transition: all 300ms ease-in-out;
-            }
+        &:hover {
+            background: $default-color-white;
+            color: $color-grafit;
+            transition: all 300ms ease-in-out;
         }
     }
 }

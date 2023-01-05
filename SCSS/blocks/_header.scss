@@ -4,8 +4,24 @@
     background-position: center;
     background-size: cover;
     margin: 0 auto;
-    height: 100vh;
+    height: 44.9vw;
     position: relative;
+
+    @media screen and (max-width:$desktop) {
+    height: 63.4vw;
+    }
+
+    @media screen and (max-width:$desktop-small) {
+    height: 84.2vw;
+    }
+
+    @media screen and (max-width:$tablet) {
+        height: 112.2vw;
+    }
+
+    @media screen and (max-width:$mobile) {
+    height: 149.7vw;
+    }
 
     &__block {
         display: flex;

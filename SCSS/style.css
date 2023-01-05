@@ -130,8 +130,28 @@ body {
   background-position: center;
   background-size: cover;
   margin: 0 auto;
-  height: 100vh;
+  height: 44.9vw;
   position: relative;
+}
+@media screen and (max-width: 1360px) {
+  .header {
+    height: 63.4vw;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    height: 84.2vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    height: 112.2vw;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header {
+    height: 149.7vw;
+  }
 }
 .header__block {
   display: flex;
@@ -556,59 +576,49 @@ body {
 
 .first-now {
   background-image: url(../images/image/render.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: auto;
   display: flex;
-  padding: 220px 0 120px;
 }
-@media screen and (max-width: 768px) {
-  .first-now {
-    padding: 120px 0;
-  }
-}
-.first-now .description {
+
+.description {
   background: rgba(35, 35, 35, 0.9);
   padding: 44px 32px;
   max-width: 49%;
 }
 @media screen and (max-width: 1024px) {
-  .first-now .description {
+  .description {
     max-width: 57%;
   }
 }
 @media screen and (max-width: 768px) {
-  .first-now .description {
+  .description {
     max-width: 100%;
   }
 }
-.first-now .description__country {
+.description__country {
   font-weight: 300;
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0.1em;
 }
-.first-now .description__title {
+.description__title {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   text-transform: uppercase;
   margin: 16px 0;
 }
-.first-now .description__btn {
+.description__btn {
   font-size: 16px;
   padding: 20px 56px;
   margin-top: 24px;
   letter-spacing: 0.07em;
 }
 @media screen and (max-width: 768px) {
-  .first-now .description__btn {
+  .description__btn {
     margin-top: 28px;
   }
 }
-.first-now .description__btn:hover {
+.description__btn:hover {
   background: #FFFFFF;
   color: #333333;
   transition: all 300ms ease-in-out;
@@ -616,17 +626,6 @@ body {
 
 .second-now {
   background-image: url(../images/image/spain.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: auto;
-  padding: 220px 0 120px;
-}
-@media screen and (max-width: 768px) {
-  .second-now {
-    padding: 120px 0;
-  }
 }
 .second-now__inner {
   display: flex;
@@ -637,49 +636,19 @@ body {
     flex-direction: row;
   }
 }
-.second-now__inner .description {
-  background: rgba(35, 35, 35, 0.9);
-  padding: 44px 32px;
-  max-width: 49%;
-}
-@media screen and (max-width: 1024px) {
-  .second-now__inner .description {
-    max-width: 57%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .second-now__inner .description {
-    max-width: 100%;
-  }
-}
-.second-now__inner .description__country {
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: 0.1em;
-}
-.second-now__inner .description__title {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  text-transform: uppercase;
-  margin: 16px 0;
-}
-.second-now__inner .description__btn {
-  font-size: 16px;
-  padding: 20px 56px;
-  margin-top: 24px;
-  letter-spacing: 0.07em;
+
+.book-now {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  padding: 220px 0 120px;
 }
 @media screen and (max-width: 768px) {
-  .second-now__inner .description__btn {
-    margin-top: 28px;
+  .book-now {
+    padding: 120px 0;
   }
-}
-.second-now__inner .description__btn:hover {
-  background: #FFFFFF;
-  color: #333333;
-  transition: all 300ms ease-in-out;
 }
 
 .what-say {
