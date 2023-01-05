@@ -426,8 +426,18 @@ body {
 .section-why__container .block .img-first {
   margin-right: auto;
 }
+.section-why__container .block .img-first:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+  transition: all 500ms ease-in-out;
+}
 .section-why__container .block .img-second {
   margin-left: auto;
+}
+.section-why__container .block .img-second:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+  transition: all 500ms ease-in-out;
 }
 
 .steps {
@@ -878,6 +888,11 @@ a {
   text-transform: uppercase;
   color: #FFFFFF;
   height: 20px;
+}
+@media screen and (max-width: 900px) {
+  .logo {
+    margin-bottom: 32px;
+  }
 }
 @media screen and (max-width: 767px) {
   .logo {

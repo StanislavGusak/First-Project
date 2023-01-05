@@ -12,6 +12,10 @@ a {
     color: $default-color-white;
     height: 20px;
 
+    @media screen and (max-width:$tablet-half) {
+        margin-bottom: 32px;
+    }
+
     @media screen and (max-width:$mobile-end) {
        display: none;
     }

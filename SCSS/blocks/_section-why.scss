@@ -83,10 +83,22 @@
 
             .img-first {
                 margin-right: auto;
+
+                &:hover {
+                    opacity: .5;
+                    transform: scale(1.1);
+                    transition: all 500ms ease-in-out;
+                }
             }
 
             .img-second {
                 margin-left: auto;
+
+                &:hover {
+                    opacity: .5;
+                    transform: scale(1.1);
+                    transition: all 500ms ease-in-out;
+                }
             }
         }
     }
