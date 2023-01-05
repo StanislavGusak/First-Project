@@ -151,13 +151,8 @@ body {
 .header__btn {
   position: absolute;
   left: 50%;
-  bottom: 13%;
+  bottom: 14%;
   transform: translate(-50%);
-}
-@media screen and (max-width: 1360px) {
-  .header__btn {
-    bottom: 14%;
-  }
 }
 
 .search {
@@ -293,6 +288,7 @@ body {
   position: absolute;
   top: 0;
   right: 18px;
+  z-index: 2;
   width: 40px;
   height: 2px;
   background: #FFFFFF;

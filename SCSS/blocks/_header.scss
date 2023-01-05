@@ -25,11 +25,7 @@
     &__btn {
         position: absolute;
         left: 50%;
-        bottom: 13%;
+        bottom: 14%;
         transform: translate(-50%);
-
-        @media screen and (max-width:$desktop) {
-            bottom: 14%;
-        }
     }
 }
