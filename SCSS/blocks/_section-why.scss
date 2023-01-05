@@ -82,6 +82,7 @@
             }
 
             .img-first {
+                cursor: pointer;
                 margin-right: auto;
 
                 &:hover {
@@ -92,6 +93,7 @@
             }
 
             .img-second {
+                cursor: pointer;
                 margin-left: auto;
 
                 &:hover {

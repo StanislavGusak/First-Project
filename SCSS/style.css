@@ -424,6 +424,7 @@ body {
   max-width: 350px;
 }
 .section-why__container .block .img-first {
+  cursor: pointer;
   margin-right: auto;
 }
 .section-why__container .block .img-first:hover {
@@ -432,6 +433,7 @@ body {
   transition: all 500ms ease-in-out;
 }
 .section-why__container .block .img-second {
+  cursor: pointer;
   margin-left: auto;
 }
 .section-why__container .block .img-second:hover {
