@@ -7,9 +7,9 @@
     height: auto;
     padding: 220px 0 120px;
 
-    @media screen and (max-width: $desktop-small) {
+    @media screen and (max-width: $tablet) {
         padding: 120px 0;
-        }
+    }
 
     &__inner {
         display: flex;
@@ -17,7 +17,7 @@
 
         @media screen and (max-width: $tablet) {
             flex-direction: row;
-            }
+        }
 
         .description {
             background: $color-background;
@@ -25,7 +25,7 @@
             max-width: 49%;
 
             @media screen and (max-width: $desktop-small) {
-                max-width: 58%;
+                max-width: 57%;
             }
 
             @media screen and (max-width: $tablet) {
@@ -34,24 +34,17 @@
         
             &__country {
                 font-weight: 300;
-                font-size: 20px;
+                font-size: $default_font-subtitle;
                 line-height: 28px;
                 letter-spacing: 0.1em;
             }
         
             &__title {
                 font-weight: 400;
-                font-size: 20px;
+                font-size: $default_font-subtitle;
                 line-height: 28px;
                 text-transform: uppercase;
                 margin: 16px 0;
-            }
-        
-            &__text {
-                font-style: normal;
-                font-weight: 300;
-                line-height: 28px;
-                letter-spacing: 0.1em;
             }
         
             &__btn {
@@ -59,6 +52,10 @@
                 padding: 20px 56px;
                 margin-top: 24px;
                 letter-spacing: 0.07em;
+
+                @media screen and (max-width: $tablet) {
+                    margin-top: 28px;
+                }
 
                 &:hover {
                     background: $default-color-white;

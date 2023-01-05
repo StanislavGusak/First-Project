@@ -20,31 +20,4 @@
         letter-spacing: 0.2em;
         margin-top: 8px;
     }
-
-    .social {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-
-        &__list {
-            &:not(:first-child) {
-                margin-left: 32px;
-            }
-
-            &-link {
-                display: block;
-                color: $default-color-white;
-
-                &:hover {
-                    color: $color-blue;
-                    transition: all 200ms ease-in-out;
-                }
-
-                .icon {
-                    width: 32px;
-                    height: 32px;
-                }
-            }
-        }
-    }
 }

@@ -17,7 +17,13 @@
 .subtitle {
     font-family: $primary-font-title;
     font-weight: 400;
-    font-size: 36px;
+    font-size: $default_font-title;
     line-height: 40px;
     text-transform: capitalize;
+}
+
+.descript {
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.1em;
 }

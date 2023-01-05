@@ -56,7 +56,7 @@
 
         &-title {
             font-weight: 400;
-            font-size: 20px;
+            font-size: $default_font-subtitle;
             line-height: 28px;
             text-transform: uppercase;
         }
@@ -76,7 +76,7 @@
 
         &-text {
             font-weight: 300;
-            font-size: 16px;
+            font-size: $default-font-size;
             line-height: 28px;
             letter-spacing: 0.1em;
             margin-top: 16px;

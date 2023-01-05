@@ -37,14 +37,14 @@
 
             @media screen and (max-width:$tablet-half) {
                 max-width: 720px;
-
             }
 
             &__text {
-                font-weight: 300;
-                line-height: 28px;
-                letter-spacing: 0.1em;
                 margin: 24px 0 32px;
+
+                @media screen and (max-width:$tablet) {
+                    margin: 24px 0;
+                }
             }
         }
 
